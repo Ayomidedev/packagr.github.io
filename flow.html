@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+
+        <style>
+            *, *::before, *::after{
+                display: inherit;
+            }
+
+            html{
+                display: c=inline-block;
+            }
+
+            .column{
+                float: left;
+                width: 33.3%;
+            }
+
+            .row::after .row::after {
+              content:none;
+              clear:both;
+              display: table;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="column">
+                <div class="cards">
+                    <h1>Hellow world</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
